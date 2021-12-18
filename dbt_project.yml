@@ -8,6 +8,8 @@ models:
     +materialized: table
     intermediate:
       +materialized: ephemeral
+
+profile: 'shopify_transform'
 vars:
   shopify:
     shopify_customer: "{{ ref('stg_shopify__customer') }}"
